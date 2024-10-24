@@ -1,0 +1,53 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.input-container {
+  margin-bottom: 20px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(var(--grid-size), 100px);
+  grid-template-rows: repeat(var(--grid-size), 100px);
+  gap: 20px; /* Adjust the spacing between grid elements */
+}
+
+.gridElement {
+  background-color: lightblue;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  aspect-ratio: 1 / 1;
+  transition: opacity 0.5s, transform 0.5s;
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hidden {
+  background-color: gray;
+  transform: scale(0.8);
+}
+
+.active {
+  background-color: lightblue;
+  opacity: 1;
+  transform: scale(1);
+}
+
+button {
+  margin-top: 20px;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  font-size: 24px;
+  border-radius: 5px;
+}
